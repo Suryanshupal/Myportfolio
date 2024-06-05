@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Roboto&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="skill.css">
+<link rel="stylesheet" href="about-section-styles3.css">
+<link rel="stylesheet" href="footer.css">
+</head>
+<body>
+    <header>
+      
+       <div class="logo">
+        Portfolio.
+      </div>
+      
+      <div class="nav-button">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+
+      <nav class="nav-bar">
+        <ul>
+            <li>
+                <a href="#Home"style="--i:1;">Home</a>
+            </li>
+            <li>
+                <a href="#About" style="--i:2;">About</a>
+            </li>
+            <li>
+                <a href="#Skills" style="--i:3;">Skills</a>
+            </li>
+            <li>
+                <a href="#Project" style="--i:4;">Projects</a>
+            </li>
+            <li>
+                <a href="mailto:suryanshupal7@gmail.com?subject = Feedback&body = Message", style="--i:5;">Contact</a>
+            </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="main" id="Home">   
+           <div class="photo">
+            <div class="socialmedia-icon">
+                <a href="https://linkedin.com/in/suryanshu-pal-71804227b"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://instagram.com/suryanshu_pal1?igshid=NTc4MTIwNjQ2YQ=="><i class='bx bxl-instagram'></i></a>
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+            </div>
+
+                
+                <div class="my-image">           
+                </div>    
+           </div>
+
+           <div class="main-content"> 
+                <span>HI there, I am</span>
+                <h1>Suryanshu Pal.</h1>
+                <div class="script">
+                    <span id="element"></span>
+                    <!-- Load library from the CDN -->
+                    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+                    <!-- Setup and start animation! -->
+                    <script>
+                      var typed = new Typed('#element', {
+                        strings: ['<b>a Web developer</b>.', '&amp; C++ enthusiastic.','&amp; Software Developer. ','&amp;embedded enthusiastic .'],
+                        typeSpeed: 60,
+                        loop:true
+                      });
+                    </script>
+                </div>
+                <p>I bridge the gap between business goals and human needs 
+                    using my curiosity to discover  valuable insights while 
+                   creating extensively through my dedication and skills
+                </p>
+                <div class="resume-btn">
+                    <a href="mailto:suryanshupal7@gmail.com?subject = Feedback&body = Message">Hire Me</a>
+                </div>
+            </div>    
+    </section>
+    
+    
+    <!-- About me Section -->
+    <section class="about-section" id="About">
+        <div class="my-image-2">
+            <img src="WhatsApp Image 2023-08-05 at 20.49.32.jpg" alt="suryanshu's image">
+        </div>
+        <div class="table-data">
+            <h3>About me</h3>
+            <p id="para">Passionate about continuous learning and staying ahead of industry trends to deliver innovative solution</p>
+            <table class="table">
+                <tr>
+                    <th>Name</th>
+                    <td>Suryanshu Pal</td>
+                </tr>
+                <tr>
+                    <th>Date of birth</th>
+                    <td>March/26/2002</td>
+                </tr>
+                <tr>
+                    <th>Address</th>
+                    <td>a-14 mahesh enclave charnie vihar,GB-Nagar</td>
+                </tr> 
+                <tr>
+                    <th>Pin-code</th>    
+                    <td>201009</td> 
+                    
+                </tr> 
+                <tr>
+                    <th>Email</th>
+                    <td>suryanshupal36@gmail.com</td>
+                </tr>            
+                    <th>Phone</th>  
+                    <td>9958091562, 8178851660</td>
+                </tr>
+            </table>
+            <a href="Suryanshu Pal Resume.pdf">Download CV</a>
+        </div>
+    
+    </section>
+    
+    
+  
+    <section id="Skills">
+        
+        <div id="container">  
+            <h2>TOOLS & SKILL</h2>
+            <div id="tools">
+                <img src="css.png" alt="Apple" class="tool" data-tool="CSS">
+                <img src="bootstrap.png" alt="Apple" class="tool" data-tool="BOOTSTRAP">
+                <img src="html-5.png" alt="Orange" class="tool" data-tool="HTML">
+                <img src="aurdino.png" alt="Orange" class="tool" data-tool="AURDINO">
+                <img src="python.png" alt="Banana" class="tool" data-tool="PYTHON">
+                <img src="java-script-logo.png" alt="Banana" class="tool" data-tool="JAVASCRIPT">
+            </div>
+      
+            <div class="total-pb">
+                
+                <!-- box where tools are droped  -->
+                <div class="box" id="tool-box">
+                    <h2>Drop Tools to know progress</h2>
+                </div>
+                
+                <!-- progress bar -->
+                <div class="input-container">
+                    <span style="color: aliceblue;">Progress</span>
+                    <div class="progress-container">
+                        <div class="progress-bar" id="my-progress-bar"><span class="progress-percentage"></span></div>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+      
+        </div>
+    </section>
+    <!-- for small devices -->
+    <section id="skill"> 
+        <div class="portfolio">
+            <div class="skill">
+              <span class="skill-name">HTML</span>
+              <div class="progress-bar">
+                <div class="progress" style="width: 80%;"></div>
+              </div>
+            </div>
+        
+            <div class="skill">
+              <span class="skill-name">CSS</span>
+              <div class="progress-bar">
+                <div class="progress" style="width: 75%;"></div>
+              </div>
+            </div>
+        
+            <div class="skill">
+              <span class="skill-name">JavaScript</span>
+              <div class="progress-bar">
+                <div class="progress" style="width: 60%;"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <span class="skill-name">Bootstrap</span>
+              <div class="progress-bar">
+                <div class="progress" style="width: 50%;"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <span class="skill-name">Aurdino</span>
+              <div class="progress-bar">
+                <div class="progress" style="width: 30%;"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <span class="skill-name">Python</span>
+              <div class="progress-bar">
+                <div class="progress" style="width: 20%;"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <span class="skill-name">C++</span>
+              <div class="progress-bar">
+                <div class="progress" style="width: 20%;"></div>
+              </div>
+            </div>
+        
+            <!-- Add more skills and progress bars here -->
+          </div>
+    </section>
+
+
+    <!-- education section -->
+    <section class="edu">
+       <div class="edu-element">
+            <span>Education</span>
+            <h4>Bachelore of technology (B-Tech)</h4>
+            <h5>SCRIET CCS university</h5>
+            <span style="color: aliceblue;">2020-2024</span>
+       </div>
+       <div class="edu-image">
+        <img src="education.png" alt="img">
+       </div>
+    </section>
+    <footer id="Contact">
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Contact Me</h3>
+                <p>suryanshupal36@gmail.com.com</p>
+                <!-- <p>suryanshupal7@gmail.com.com</p> -->
+            </div>
+            <div class="social-media">
+                <h3>Follow Me</h3>
+                <ul>
+                    <li><a href="https://linkedin.com/in/suryanshu-pal-71804227b" ><i class='bx bxl-linkedin'></i></a></li>
+                    <li><a href="https://instagram.com/suryanshu_pal1?igshid=NTc4MTIwNjQ2YQ=="><i class='bx bxl-instagram'></i></a></li>
+                    <li><a href="#"><i class='bx bxl-facebook'></i></a></li>
+                </ul>
+            </div>    
+        </div>
+        <div class="copyright">
+          <p>&copy 2023 suryanshupal. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

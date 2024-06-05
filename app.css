@@ -1,0 +1,323 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Google Sans Regular";
+    box-sizing: border-box;
+    /* background-color: #f1f9ff; */
+  }
+html{
+    scroll-behavior: smooth;
+}
+header{
+    width: 100%;
+    height: 80px;
+    background:#100f2f;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+    position: fixed;
+    z-index: +2;
+}
+.logo{
+    font-size: 28px;
+    font-weight: bold;
+    color:#99ff00 ;
+    animation: slidetop 0.9s ease-in-out;
+}
+.nav-bar ul{
+    display: flex;
+}
+.nav-button{
+    display: none;
+}
+.nav-bar ul li a{
+    display: block;
+    color: #fefefe;
+    font-size: 15px;
+    padding: 10px 25px;
+    /* border: 2px solid black; */
+    border-radius:50px ;
+    transition: 0.2s;
+    margin: 0 5px;
+    opacity: 0;
+    animation: slidetop 1s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+}
+.nav-bar ul li a:hover{
+    border-bottom: 2px solid #99ff00;
+     color:#99ff00;
+     /* background-color: #fefefe; */
+}
+@media only screen and (max-width:1320px){
+    header{
+        padding: 0 50px;
+    }
+    .my-image{
+        margin-left: 40px;
+    }
+    .main .main-content h1{
+        font-size: 40px;
+    }
+}
+@media only screen and (max-width:1100px){
+    header{
+        padding: 0 30px;
+    }
+    .my-image{
+        margin-left: 10px;
+    }
+    .main .main-content h1{
+        font-size: 40px;
+    }
+}
+@media only screen and (max-width:900px){
+    .main{
+        display: flex;
+        flex-direction:column;
+        /* border: 2px solid black; */
+    }
+    .photo .my-image{
+        margin-left:px;
+        border: 10px solid rgb(255, 255, 255);
+        width: 250px;
+        height: 250px;
+    }
+    .main-content{
+        width: 402px;
+        padding: 0 10px;
+    }
+    .nav-button .line{
+        width: 30px;
+        height: 3px;
+        background: #fefefe;
+        margin: 6px 0;
+    }
+    .nav-button{
+        display:block;
+        cursor: pointer;
+    }
+    .nav-bar{
+        height: 0;
+        position: absolute;
+        top:80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background: #100f2f;
+        transition: 0.5s;
+        overflow: hidden;
+
+    }
+    .nav-bar.active{
+        height: 280px;
+    }
+    .nav-bar ul{
+        display: block;
+        width: fit-content;
+        margin: 10px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+    .nav-bar.active ul{
+        opacity: 1;
+    }
+    .nav-bar ul li a{
+        margin-bottom: 12px;
+       
+    }
+    .nav-bar ul li a:hover{
+        border-bottom: 2px solid #99ff00;
+        color:#99ff00;
+    }
+
+    /* FOR GALAXY FOLD IT IS NOT COMPLETE */
+@media only screen and (max-width:390px){
+    .script #element{
+        font-size:20px ;
+    }
+    .main-content{
+        width: 275px;
+        padding: 0px;
+    }
+    .main-content p{
+        font-size: 13px;
+    }
+    .h1{
+        width: 200px;
+        font-size: 2px;
+    }
+    .photo .my-image{
+        margin-left:0px;
+        width: 200px;
+        height: 200px;
+        border: 2px solid black;
+    }
+
+}
+}
+body{
+    padding:0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f1f9ff;
+}
+.main{
+    background-color: #100f2f;
+    display: flex;
+    justify-content: space-evenly;
+    height: 700px;
+    align-items: center;
+    max-width:100%;
+}
+.main-content{
+    text-align: start;
+    color: white;
+    height: 200px;
+}
+.main-content h1{
+    text-align: start;
+   margin: 0;
+   padding: 0;
+   font-size: 60px;
+   color: #eeff00;
+}
+.script{
+   font-size: 35px;
+   font-weight: bold;
+   color: #99ff00;
+   
+}
+.main-content p{
+    text-align: start;
+    font-family: 'Lato', sans-serif;
+    /* border: 2px solid black; */
+    max-width: 30em;
+    max-height: 40%;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-top: 4px;
+}
+.resume-btn a:hover{
+    transform:translateY(-10px);
+    border: 2px solid red;
+}
+.resume-btn{
+    margin-top: 30px;
+}
+.resume-btn a{
+    margin: 0.5em ;
+    /* border: 2px solid black; */
+    text-decoration: none;
+    padding: 1% 3%;
+    border-radius: 2em;
+    color: white;
+    background-color: rgb(247, 49, 49);
+}
+.photo{
+    /* border: 2px solid #ffffff; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.my-image{
+  width: 300px;  
+  height: 300px;  
+  background-image: url(myimage.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  border: 5px solid #001e36;
+  box-shadow: 10px 10px 50px 9px #001e36;
+  background-color: #FFDBAA;
+  margin-left: 40px;
+  border: 5px solid white;
+}
+
+/* social media icon style */
+.socialmedia-icon a{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #000000;
+    text-decoration: none;
+    margin: 20px 0;
+    z-index: 1;
+}
+.socialmedia-icon a{
+    background-color: #1891fc;
+}
+.socialmedia-icon a:nth-child(2){
+    background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #e1306c, #fd1d1d);
+}
+.socialmedia-icon a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #f0f0f0;
+    border-radius: 50%;
+    transform: scale(.88);
+    z-index: -1;
+}
+
+.socialmedia-icon a:hover::after {
+    transform: scale(0);
+    transition: .5s ease;
+}
+.socialmedia-icon a:hover{
+    color: #ffffff;
+    transition: .3s ease;
+}
+
+/* till here socialmedia icon */
+@keyframes slideleft{
+    from{
+        transform: translateX(-50px);
+    }
+    to{
+        transform: translatex(0);
+    }
+}
+@keyframes slidetop{
+    0%{
+        opacity: 0;
+        transform: translateY(70px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes floatImage{
+    0%{
+         transform:translateY(0);
+    }
+    50%{
+         transform:translateY(-24px);
+    }
+    100%{
+         transform:translateY(0);
+    }
+}
+
+.socialmedia-icon a{
+    animation: slideleft 1s ease;
+}
+/* .socialmedia-icon a{
+    animation-name: slideinleft;
+    animation-duration: 4s;
+    animation-timing-function: ease-in;
+    animation-delay: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+} */
