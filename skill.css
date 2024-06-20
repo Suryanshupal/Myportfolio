@@ -2,31 +2,34 @@ body {
     font-family: Arial, sans-serif;
     text-align: center;
   }
-  
-  h2 {
+  h2{
     margin-top: 20px;
-    color: #d2d2d2;
+    color:  #f8f8f8;
+  }
+  #tool-box h2 {
+    margin-top: 20px;
+    background-color:  #E52372;
   }
   #container {
+    padding-top: 35px;
     background-color: #100f2f;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    height: 650px;
+    height: 550px;
     /* border: 2px solid black; */
   }
   
   #tool-box {
-    background-color: #f1f5c4;
-    width: 230px;
-    height: 230px;
-    border: 2px dashed #333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    display: block;
+    width: 15rem;
+    height: 6rem;
+    background: #f3f3f3;
+    border-radius: .2rem .2rem 3rem  3rem;
+    border-bottom: 0.3rem solid #ccc;
+    z-index: 0;
   }
   
   .tool {
@@ -35,7 +38,7 @@ body {
     margin: 10px;
     cursor: grab;
     margin: 0 40px;
-    /* filter: drop-shadow(0px 3px 10px black); */
+    /* filter: drop-shadow(0px 3px 10px black);  */
   }
   #tools :nth-child(2n){
     animation: floatImage 4s ease-in infinite;
@@ -50,7 +53,7 @@ body {
 
   .progress-container {
     width: 300px;
-    border: 1px solid #d2d2d2;
+    border: 3px solid #d2d2d2;
     height: 18px;
     border-radius: 5px;
     overflow: hidden;
@@ -60,7 +63,7 @@ body {
 
   .progress-bar {
     height: 100%;
-    background-color:#027dc5;
+    background-color:#c5025d;
     width: 0;
     transition: width 0.3s;
   }
@@ -70,24 +73,29 @@ body {
     /* border: 2px solid black; */
     padding: 10px;
   }
-  .input-container span{
-    color: #1e0303;
+  .progress-container span{
+    color: #e6e6e6;
     font-weight: bolder;
   }
   .input-container h4{
+    padding-left: 10px;
     margin:0;
-    padding: 0;
   }
   .total-pb{
     max-width:100%;
     padding: 10px;
     /* border: 2px solid black; */
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    /* align-items: center; */
+    /* justify-content: space-between; */
   }
   #skill{
     display:none;
+  }
+  @media(min-width:890px){
+    .headingSkill{
+      display: none;
+    }
   }
   @media (max-width:890px){
     #Skills{
@@ -106,6 +114,12 @@ body {
     
     .skill {
       margin-bottom: 20px;
+    }
+    .headingSkill{
+      margin-top:0px;
+      padding: 30px;
+      background-color:#100f2f ;
+      font-size: 30px;
     }
     
     .skill-name {
@@ -165,4 +179,5 @@ body {
     100%{
          transform:translateY(0);
     }
+
   }

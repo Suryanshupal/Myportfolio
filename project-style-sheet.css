@@ -1,0 +1,43 @@
+#Project{
+    margin: -1px;
+    padding: 20px;
+    background-color:#100f2f ;
+    font-size: 20px;
+}
+#Project h2{
+    /* border: solid 2px black; */
+    color: rgb(248, 245, 245);
+}
+@media(min-width:890px){
+    .all-projects{
+      width: 100%;
+      display: flex;
+      margin-top: 60px;
+      justify-content: space-evenly;
+    }
+    .all-projects img{
+      width: 150px;
+      height: 150px;
+      border-radius: 20px;
+      
+    }
+}
+.all-projects img{
+    width: 150px;
+    height: 150px;
+    border-radius: 20px 20px 0px 0px;
+}
+.all-projects{
+  align-items: self-end;
+}
+@media(max-width:890px){
+  .project-car{
+    padding: 30px 0;
+  }
+  .project-light{
+    padding-top: 30px;
+  }
+}
+
+
+

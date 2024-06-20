@@ -4,7 +4,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:#100f2f;
+    background-color:#f3cb3bee;
     color: #0e0c0c;
     padding: 0;
     margin: 0;
@@ -30,7 +30,7 @@
     font-family: roboto;
     font-size: 15px;
    width: 30px;
-   color: #ffffff;
+   color: #14560a;
    text-align: start;
 }
 .table-data{
@@ -41,13 +41,14 @@
     font-family: roboto;
 }
 .table-data h3{
-    color: aliceblue;
+    color: teal;
 }
 #para{
     max-width: 500px;
+    font-family: cursive;
     font-size: 20px;
     padding:15px 0;
-    color: wheat;
+    color:#36454F;
 }
 .table {
     width: 500px;
@@ -136,6 +137,7 @@
 }
 .edu-image img{
     width: 100px;
+    filter: invert(1);
 }
 footer{
     max-width:100%;

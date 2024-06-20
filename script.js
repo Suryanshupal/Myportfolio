@@ -27,7 +27,7 @@ toolBox.addEventListener('dragenter', dragEnter);
 toolBox.addEventListener('dragleave', dragLeave);
 toolBox.addEventListener('drop', drop);
 
-// let draggedFruit = null; //no effect
+// let draggedSkill = null; //no effect
 
 function dragOver(e) {
   e.preventDefault();
@@ -35,23 +35,23 @@ function dragOver(e) {
 
 function dragEnter(e) {
   e.preventDefault();
-  // fruitBox.classList.add('highlight'); //no effect
+  // Box.classList.add('highlight'); //no effect
 }
 
 function dragLeave() {
-  // fruitBox.classList.remove('highlight');  //no effect
+  // Box.classList.remove('highlight');  //no effect
 }
 const progressPercenage = document.querySelector('.progress-percentage')
 function drop() {
-  // fruitBox.classList.remove('highlight');   //no effect
+  // Box.classList.remove('highlight');   //no effect
   if (draggedtool) {
     const b ={
-      HTML:80,
-      CSS:75,
-      JAVASCRIPT:60,
-      BOOTSTRAP:50,
-      AURDINO:30,
-      PYTHON:20
+      HTML:88,
+      CSS:79,
+      JAVASCRIPT:70,
+      BOOTSTRAP:80,
+      AURDINO:60,
+      SCADA:80
     }
     const a = `${draggedtool.dataset.tool}`
     const c = b[a]

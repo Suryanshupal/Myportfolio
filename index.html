@@ -15,6 +15,8 @@
 <link rel="stylesheet" href="skill.css">
 <link rel="stylesheet" href="about-section-styles3.css">
 <link rel="stylesheet" href="footer.css">
+<link rel="stylesheet" href="project-style-sheet.css">
+<link rel="stylesheet" href="carouselStyle.css">
 </head>
 <body>
     <header>
@@ -122,7 +124,7 @@
                     <td>suryanshupal36@gmail.com</td>
                 </tr>            
                     <th>Phone</th>  
-                    <td>9958091562, 8178851660</td>
+                    <td>9958091562</td>
                 </tr>
             </table>
             <a href="Suryanshu Pal Resume.pdf">Download CV</a>
@@ -131,25 +133,25 @@
     </section>
     
     
-  
+  <!-- skill section -->
     <section id="Skills">
         
         <div id="container">  
             <h2>TOOLS & SKILL</h2>
             <div id="tools">
-                <img src="css.png" alt="Apple" class="tool" data-tool="CSS">
-                <img src="bootstrap.png" alt="Apple" class="tool" data-tool="BOOTSTRAP">
-                <img src="html-5.png" alt="Orange" class="tool" data-tool="HTML">
-                <img src="aurdino.png" alt="Orange" class="tool" data-tool="AURDINO">
-                <img src="python.png" alt="Banana" class="tool" data-tool="PYTHON">
-                <img src="java-script-logo.png" alt="Banana" class="tool" data-tool="JAVASCRIPT">
+                <img src="css.png" alt="Css" class="tool" data-tool="CSS">
+                <img src="bootstrap.png" alt="bootstrap" class="tool" data-tool="BOOTSTRAP">
+                <img src="html-5.png" alt="html" class="tool" data-tool="HTML">
+                <img src="aurdino.png" alt="arduino" class="tool" data-tool="AURDINO">
+                <img src="python.png" alt="scada" class="tool" data-tool="SCADA">
+                <img src="java-script-logo.png" alt="java-script-logo" class="tool" data-tool="JAVASCRIPT">
             </div>
       
             <div class="total-pb">
                 
                 <!-- box where tools are droped  -->
                 <div class="box" id="tool-box">
-                    <h2>Drop Tools to know progress</h2>
+                    <h2>Drag skill here</h2>
                 </div>
                 
                 <!-- progress bar -->
@@ -160,56 +162,57 @@
                         </div>
                     </div>
                 </div>
-            
             </div>
-      
         </div>
     </section>
-    <!-- for small devices -->
-    <section id="skill"> 
+
+
+<!-- for small devices -->
+    <h2 class="headingSkill">Skills</h2>
+    <section id="skill">
         <div class="portfolio">
             <div class="skill">
               <span class="skill-name">HTML</span>
               <div class="progress-bar">
-                <div class="progress" style="width: 80%;"></div>
+                <div class="progress" style="width: 88%;"></div>
               </div>
             </div>
         
             <div class="skill">
               <span class="skill-name">CSS</span>
               <div class="progress-bar">
-                <div class="progress" style="width: 75%;"></div>
+                <div class="progress" style="width: 79%;"></div>
               </div>
             </div>
         
             <div class="skill">
               <span class="skill-name">JavaScript</span>
               <div class="progress-bar">
-                <div class="progress" style="width: 60%;"></div>
+                <div class="progress" style="width: 70%;"></div>
               </div>
             </div>
             <div class="skill">
               <span class="skill-name">Bootstrap</span>
               <div class="progress-bar">
-                <div class="progress" style="width: 50%;"></div>
+                <div class="progress" style="width: 80%;"></div>
               </div>
             </div>
             <div class="skill">
               <span class="skill-name">Aurdino</span>
               <div class="progress-bar">
-                <div class="progress" style="width: 30%;"></div>
+                <div class="progress" style="width: 60%;"></div>
               </div>
             </div>
             <div class="skill">
-              <span class="skill-name">Python</span>
+              <span class="skill-name">Scada</span>
               <div class="progress-bar">
-                <div class="progress" style="width: 20%;"></div>
+                <div class="progress" style="width: 80%;"></div>
               </div>
             </div>
             <div class="skill">
               <span class="skill-name">C++</span>
               <div class="progress-bar">
-                <div class="progress" style="width: 20%;"></div>
+                <div class="progress" style="width: 50%;"></div>
               </div>
             </div>
         
@@ -217,11 +220,45 @@
           </div>
     </section>
 
+<!-- project section -->
+    <section class="carousel-body">
+
+      <div class="carousel">
+        <div class="carousel__scene">
+          <ol class="carousel__list">
+             <li class="carousel__cell"><span class="song__title">Smart Street Light</span><span class="song__artist">Project Type- IOT</span></li>
+            <li class="carousel__cell"><span class="song__title">Line Following Robot</span><span class="song__artist">Project Type- IOT</span></li>
+            <li class="carousel__cell"><span class="song__title">Home Automation</span><span class="song__artist">Project Type- IOT</span></li>
+          </ol>
+        </div>
+        <div class="carousel__controls">
+          <button class="previous-button">&#x1F446;&#x1F3FB;</button>
+          <button class="next-button">&#x1F447;&#x1F3FB;</button>
+        </div>
+      </div>
+    </section>
+    <section id="Project">
+      <h2>FEATURED PROJECTS</h2>
+        <div class="all-projects">
+          <div class="project-light">
+              <img src="smart street light.jpeg" alt="">
+              <h3 style="color: aliceblue;">Smart street light</h3>
+          </div>
+          <div class="project-car">
+            <img src="line following car.jpg" alt="">
+            <h3 style="color: aliceblue;">Line Following Robot</h3>
+          </div>
+          <div class="project-home">
+            <img src="home automation.jpg" alt="">
+            <h3 style="color: aliceblue;">Home Automation</h3>
+          </div>
+        </div>
+    </section>
 
     <!-- education section -->
     <section class="edu">
        <div class="edu-element">
-            <span>Education</span>
+            <span style="font-family:Google Sans Regula;">EDUCATION</span>
             <h4>Bachelore of technology (B-Tech)</h4>
             <h5>SCRIET CCS university</h5>
             <span style="color: aliceblue;">2020-2024</span>
@@ -251,7 +288,7 @@
         </div>
     </footer>
 
-
+    <script src="carousel.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
