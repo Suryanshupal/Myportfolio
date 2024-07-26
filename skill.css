@@ -31,9 +31,6 @@ body {
     border-bottom: 0.3rem solid #ccc;
     z-index: 0;
   }
-.tool :nth-child(4){
-    filter: invert(1);
-}   
   
   .tool {
     width: 100px;

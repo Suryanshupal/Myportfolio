@@ -17,6 +17,7 @@
 <link rel="stylesheet" href="footer.css">
 <link rel="stylesheet" href="project-style-sheet.css">
 <link rel="stylesheet" href="carouselStyle.css">
+<link rel="stylesheet" href="accordian.css">
 </head>
 <body>
     <header>
@@ -76,7 +77,7 @@
                     <!-- Setup and start animation! -->
                     <script>
                       var typed = new Typed('#element', {
-                        strings: ['<b>a Web developer</b>.', '&amp; C++ enthusiastic.','&amp; Software Developer. ','&amp;embedded enthusiastic .'],
+                        strings: ['<b>a Web developer</b>.', '&amp; C++ enthusiastic.','&amp; Software Developer. '],
                         typeSpeed: 60,
                         loop:true
                       });
@@ -226,9 +227,9 @@
       <div class="carousel">
         <div class="carousel__scene">
           <ol class="carousel__list">
-             <li class="carousel__cell"><span class="song__title">Flight Ticket Website</span><span class="song__artist">Project Type- Front-end</span></li>
-            <li class="carousel__cell"><span class="song__title">Upcoming Projects</span><span class="song__artist">Project Type- nil</span></li>
-            <li class="carousel__cell"><span class="song__title">Upcoming Projects</span><span class="song__artist">Project Type- nil</span></li>
+             <li class="carousel__cell"><span class="song__title">My Portfolio</span><span class="song__artist">Project Type- Front-end</span></li>
+            <li class="carousel__cell"><span class="song__title">Flight ticket Website</span><span class="song__artist">Project Type- front-end</span></li>
+            <li class="carousel__cell"><span class="song__title">upcoming project</span><span class="song__artist">Project Type- nil</span></li>
           </ol>
         </div>
         <div class="carousel__controls">
@@ -241,8 +242,42 @@
       <h2>FEATURED PROJECTS</h2>
         <div class="all-projects">
           <div class="project-light">
-              <img src="smart street light.jpeg" alt="">
-              <h3 style="color: aliceblue;">Flight Ticket Website</h3>
+              <!-- <h3 style="color: aliceblue;">Smart street light</h3> -->
+          </div>
+          <div class="project-car">
+           
+            <div class="accordion">
+              <div class="accordion-item">
+                <img src="projectimg1.png" alt="">
+                <div class="accordion-item-header">
+                  My Portfolio
+                </div><!-- /.accordion-item-header -->
+                <div class="accordion-item-body">
+                  <div class="accordion-item-body-content">
+                    Web Developed a responsive and visually appealing portfolio website using HTML, CSS, and
+                    JavaScript. Implemented modern design principles and interactive features to showcase   
+                    personal projects and skills.
+                  </div>
+                </div><!-- /.accordion-item-body -->
+              </div><!-- /.accordion-item -->
+            </div>
+            <div class="accordion">
+              <div class="accordion-item">
+                <img src="projectimg2.png" alt="">
+                <div class="accordion-item-header">
+                  Flight ticket Website
+                </div><!-- /.accordion-item-header -->
+                <div class="accordion-item-body">
+                  <div class="accordion-item-body-content">
+                    Description: Developed a user-friendly and responsive front-end web          
+                    application for booking flight tickets. Ensured the website is fully responsive,   
+                    providing an optimal viewing experience across a wide range of devices  
+                    (desktops, tablets, and mobile phones).
+                  </div>
+                </div><!-- /.accordion-item-body -->
+              </div><!-- /.accordion-item -->
+            </div>
+            <!-- <h3 style="color: aliceblue;">Line Following Robot</h3> -->
           </div>
         </div>
     </section>
@@ -282,5 +317,6 @@
 
     <script src="carousel.js"></script>
     <script src="script.js"></script>
+    <script src="accordian.js"></script>
 </body>
 </html>
