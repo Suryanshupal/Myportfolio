@@ -51,7 +51,7 @@ function drop() {
       JAVASCRIPT:70,
       BOOTSTRAP:80,
       AURDINO:60,
-      SCADA:80
+      REACT:80
     }
     const a = `${draggedtool.dataset.tool}`
     const c = b[a]
